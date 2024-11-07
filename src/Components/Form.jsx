@@ -14,11 +14,11 @@ const Form = () => {
         setError("");
         
         if (!nombre || nombre.length < 3 || nombre.startsWith(" ")) {
-            setError("El nombre debe tener al menos 3 caracteres y no debe iniciar con un espacio.");
+            setError("Por favor chequea que la información sea correcta.");
             return;
           }
         if (!apellido || apellido.length < 6) {
-            setError("El apellido debe tener al menos 6 caracteres.");
+            setError("Por favor chequea que la información sea correcta.");
             return;
         }
         setEstudiante({ nombre, apellido, curso });
